@@ -2,7 +2,14 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
+int mul(vector<int>a, vector<int>b, vector <int>c) {
+    int sum = 0;
+    for (int i = 0; i < c.size(); i++) {
+        c[i] = a[i] * b[i];
+        sum += c[i];
+    }
+    return sum;
+}
 int main()
 {
     int n;
@@ -24,12 +31,9 @@ int main()
     vector <int> c;
     c.assign(n, 0);
     int sum = 0;
-    for (int i = 0; i < n; i++) {
-        c[i] = a[i] * b[i];
-        sum += c[i];
-    }
+    
 
-    cout << sum << endl;
+    cout << mul( a, b, c) << endl;
 
     return 0;
 
