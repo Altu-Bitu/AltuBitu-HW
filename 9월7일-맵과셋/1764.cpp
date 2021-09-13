@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <string>
+
 using namespace std;
 
 int n, m;
 
-string a[1000000];
-string b[1000000];
+string a[500000];
+string b;
 vector <string> list;
 
 int main() {
@@ -16,13 +17,12 @@ int main() {
 		cin >> a[i];
 	}
 	for (int j = 0; j < m; j++) {
-		cin >> b[j];
+		cin >> b;
 		for (int i = 0; i < n; i++) {
-			if (b[j] == a[i]) {
+			if (b == a[i]) 
 				count++;
-				list.push_back(b[j]);
+				list.push_back(b);
 			}
-		}
 	}
 	cout << count << '\n';
 	for (int i = 0; i < list.size(); i++) {
