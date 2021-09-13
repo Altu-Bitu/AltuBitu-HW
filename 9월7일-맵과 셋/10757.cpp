@@ -19,7 +19,7 @@ int main() {
 	}
 	int a[1000];
 	int b[1000];
-	
+
 
 	for (int i = 0; i < number1.size(); i++) {
 		a[i + 1] = number1[i] - '0';
@@ -42,13 +42,10 @@ int main() {
 
 
 	if (a[0] != 0) cout << 1;
-	
-    for (int i = fin.size() - 1; i >= 0; i--) {
+
+	for (int i = fin.size() - 1; i >= 0; i--) {
 		cout << fin[i];
 	}
-	
+
 
 }
-
-
-
