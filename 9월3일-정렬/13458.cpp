@@ -11,9 +11,9 @@ int peo(int n, int a, int b) {
         int num = arr[i] - a;
         int c = num % b;
         int d = num / b;
-        if (c == 0) { count += d + 1; }
-        else if (c > 0)  count += d + 2;
-        else  count = 1;
+        if (arr[i] <= a) count = 1;
+        else if (c == 0) count += d + 1;
+        else count += d + 2;
     }
     return count;
 }
