@@ -5,13 +5,13 @@ using namespace std;
 
 vector <int> arr;
 
-long peo(int n, int a, int b) {
-    long count = 0;
+long long peo(int n, int a, int b) {
+    long long count = 0;
     for (int i = 0; i < n; i++) {
         int num = arr[i] - a;
 
         int d = num / b;
-        if (num < 0) count = 1;
+        if (num < 0) count += 1;
         else if ((num % b) == 0) count += d + 1;
         else count += d + 2;
     }
