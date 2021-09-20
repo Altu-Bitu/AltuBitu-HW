@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <queue>
+#include <cstring>
 
 using namespace std;
 
@@ -29,9 +29,9 @@ int main() {
 		else if (order == "check") {
 			cin >> num;
 			if (po[num])
-				cout << 1 << '\n';
+				cout << "1" << '\n';
 			else
-				cout << 0 << '\n';
+				cout << "0" << '\n';
 		}
 		else if (order == "toggle") {
 			cin >> num;
@@ -39,12 +39,11 @@ int main() {
 			else  po[num] = true;
 		}
 		else if (order == "all") {
-			for (int i = 1; i < 21; i++) {
-				po[i] = true;
-			}
+			memset(po, true, sizeof(po));
 		}
 		else if (order=="empty") {
-			po[21] = {false};
+			memset(po, false, sizeof(po));
 		}
 	}
+	return 0;
 }
