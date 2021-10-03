@@ -76,7 +76,7 @@ int main() {
     check.assign(SIZE, false);//초기화
     arr.assign(SIZE, 0);//초기화
 
-    //그런데 이미 findValue에서 초기화를 하는데 초기화를 또 하나요?
+    
 
     //최솟값 연산
     for (int i = 0; i <= k; i++)
