@@ -38,7 +38,7 @@ int main() {
 			cout << cnt;
 			break;
 		}
-		else if (end > n || end > m) cout << -1;
+		else if (end > n || end > m) cout <<  " - 1";
 		else end += 1;
 	}
 	
