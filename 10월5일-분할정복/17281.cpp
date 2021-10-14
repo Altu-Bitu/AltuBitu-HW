@@ -75,6 +75,7 @@ void array(int cnt) { //cnt: 타자순서
             check[i] = false;//가능한 배치를 다 해봐야해서
         }
     }
+    
 }
 
 /**
